@@ -19,6 +19,10 @@
  */
 class Post extends CActiveRecord
 {
+        const STATUS_DRAFT=1;
+        const STATUS_PUBLISHED=2;
+        const STATUS_ARCHIVED=3;
+    
 	/**
 	 * @return string the associated database table name
 	 */
@@ -35,13 +39,13 @@ class Post extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, content, status, author_id', 'required'),
-			array('status, create_time, update_time, author_id', 'numerical', 'integerOnly'=>true),
+			array('title, content, status', 'required'),
 			array('title', 'length', 'max'=>128),
-			array('tags', 'safe'),
-			// The following rule is used by search().
-			// @todo Please remove those attributes that should not be searched.
-			array('id, title, content, tags, status, create_time, update_time, author_id', 'safe', 'on'=>'search'),
+                        array('status','in','range'=>array(1,2,3)),
+			array('tags', 'match', 'pattern'=>'/^[\w\s,]+$/',
+                            'message'=>'Tags can only contain word characters'),
+			array('tags', 'normalizeTags'),
+                        array('title, status', 'safe', 'on'=>'search')
 		);
 	}
 
@@ -53,8 +57,14 @@ class Post extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'comments' => array(self::HAS_MANY, 'Comment', 'post_id'),
-			'author' => array(self::BELONGS_TO, 'User', 'author_id'),
+                    'author' => array(self::BELONGS_TO, 'User', 'author_id'),
+                    'comments' => array(self::HAS_MANY, 'Comment', 'post_id',
+                        'condition'=>'comments.status='.Comment::STATUS_APPROVED,
+                        'order'=>'comments.create_time DESC'),
+                    'commentCount'=>array(self::STAT, 'Comment', 'post_id',
+                        'condition'=>'status='.Comment::STATUS_APPROVED),
+                    
+			
 		);
 	}
 
@@ -117,4 +127,16 @@ class Post extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        
+        public function normalizeTags(){
+            $this->tags=Tag::array2string(array_unique(Tag::string2array($this->tags)));
+        }
+        
+        public function getUrl(){
+            return Yii::app()->createUrl('post/view', array(
+                'id'=>  $this->id,
+                'title'=>  $this->title,
+            ));
+        }
 }
