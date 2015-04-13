@@ -1,0 +1,373 @@
+2015/04/12 09:16:36 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:16:36 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:16:36 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:16:36 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /var/www/html/projects/public/blog/protected/models/Post.php(163): CActiveRecord->__call('updateFrequency', Array)
+#2 /var/www/html/projects/public/blog/protected/models/Post.php(163): Tag->updateFrequency(NULL, 'prueba')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1100): Post->afterSave()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#5 /var/www/html/projects/public/blog/protected/controllers/PostController.php(88): CActiveRecord->save()
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/create
+---
+2015/04/12 09:25:55 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:25:55 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:25:55 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:25:55 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /var/www/html/projects/public/blog/protected/models/Post.php(165): CActiveRecord->__call('updateFrequency', Array)
+#2 /var/www/html/projects/public/blog/protected/models/Post.php(165): Tag->updateFrequency(NULL, 'prueba post yii...')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1100): Post->afterSave()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#5 /var/www/html/projects/public/blog/protected/controllers/PostController.php(88): CActiveRecord->save()
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/create
+---
+2015/04/12 09:26:04 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:26:04 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:26:04 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:26:04 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /var/www/html/projects/public/blog/protected/models/Post.php(165): CActiveRecord->__call('updateFrequency', Array)
+#2 /var/www/html/projects/public/blog/protected/models/Post.php(165): Tag->updateFrequency(NULL, 'prueba post yii...')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1100): Post->afterSave()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#5 /var/www/html/projects/public/blog/protected/controllers/PostController.php(88): CActiveRecord->save()
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/create
+---
+2015/04/12 09:33:20 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:33:20 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:33:20 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:34:08 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:34:08 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:34:08 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:34:49 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:34:49 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:34:49 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:36:42 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:36:42 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/12 09:36:42 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 19:57:13 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 19:57:13 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 19:57:13 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 19:57:13 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /var/www/html/projects/public/blog/protected/models/Post.php(166): CActiveRecord->__call('updateFrequency', Array)
+#2 /var/www/html/projects/public/blog/protected/models/Post.php(166): Tag->updateFrequency(NULL, 'post')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1100): Post->afterSave()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#5 /var/www/html/projects/public/blog/protected/controllers/PostController.php(88): CActiveRecord->save()
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/create
+---
+2015/04/13 20:09:15 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:09:15 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:09:15 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:09:15 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /var/www/html/projects/public/blog/protected/models/Post.php(166): CActiveRecord->__call('updateFrequency', Array)
+#2 /var/www/html/projects/public/blog/protected/models/Post.php(166): Tag->updateFrequency(NULL, 'post')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1100): Post->afterSave()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#5 /var/www/html/projects/public/blog/protected/controllers/PostController.php(88): CActiveRecord->save()
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/create
+---
+2015/04/13 20:12:27 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:12:27 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:12:27 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:12:27 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /var/www/html/projects/public/blog/protected/models/Post.php(174): CActiveRecord->__call('updateFrequency', Array)
+#2 /var/www/html/projects/public/blog/protected/models/Post.php(174): Tag->updateFrequency(NULL, 'post')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1100): Post->afterSave()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#5 /var/www/html/projects/public/blog/protected/controllers/PostController.php(88): CActiveRecord->save()
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/create
+---
+2015/04/13 20:26:58 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (109)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:26:58 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (109)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:26:58 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (109)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:26:58 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /var/www/html/projects/public/blog/protected/models/Post.php(172): CActiveRecord->__call('updateFrequency', Array)
+#2 /var/www/html/projects/public/blog/protected/models/Post.php(172): Tag->updateFrequency('post', 'post')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1129): Post->afterSave()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->update(NULL)
+#5 /var/www/html/projects/public/blog/protected/controllers/PostController.php(110): CActiveRecord->save()
+#6 [internal function]: PostController->actionUpdate('5')
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('update')
+#18 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/update')
+#19 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?r=post/update&id=5
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/update&id=5
+---
+2015/04/13 20:34:28 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:34:28 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:34:28 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:34:29 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /var/www/html/projects/public/blog/protected/models/Post.php(156): CActiveRecord->__call('updateFrequency', Array)
+#2 /var/www/html/projects/public/blog/protected/models/Post.php(156): Tag->updateFrequency(NULL, 'post')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1100): Post->afterSave()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#5 /var/www/html/projects/public/blog/protected/controllers/PostController.php(88): CActiveRecord->save()
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/create
+---
+2015/04/13 20:34:50 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /var/www/html/projects/public/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /var/www/html/projects/public/blog/protected/models/Post.php(162): Tag->updateFrequency('post', '')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /var/www/html/projects/public/blog/protected/controllers/PostController.php(125): CActiveRecord->delete()
+#5 [internal function]: PostController->actionDelete('7')
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1116): CFilterChain->run()
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('delete')
+#20 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#21 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/blog/index.php?ajax=post-grid&id=7&r=post%2Fdelete
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/admin
+---
+2015/04/13 20:35:54 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:35:54 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:35:54 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (87)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/04/13 20:35:54 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /var/www/html/projects/public/blog/protected/models/Post.php(156): CActiveRecord->__call('updateFrequency', Array)
+#2 /var/www/html/projects/public/blog/protected/models/Post.php(156): Tag->updateFrequency(NULL, 'aa')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1100): Post->afterSave()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#5 /var/www/html/projects/public/blog/protected/controllers/PostController.php(88): CActiveRecord->save()
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/create
+---
