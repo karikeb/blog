@@ -371,3 +371,241 @@ Stack trace:
 REQUEST_URI=/blog/index.php?r=post/create
 HTTP_REFERER=http://projects.com/blog/index.php?r=post/create
 ---
+2015/06/06 11:04:03 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (112)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 11:04:03 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (112)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 11:04:03 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (112)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 11:04:03 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /var/www/html/projects/public/blog/protected/models/Post.php(156): CActiveRecord->__call('updateFrequency', Array)
+#2 /var/www/html/projects/public/blog/protected/models/Post.php(156): Tag->updateFrequency(NULL, 'post prueba')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1100): Post->afterSave()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#5 /var/www/html/projects/public/blog/protected/controllers/PostController.php(113): CActiveRecord->save()
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/create
+---
+2015/06/06 11:06:15 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (112)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 11:06:15 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (112)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 11:06:15 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (112)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 11:06:15 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "addTags".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(227): CComponent->__call('addTags', Array)
+#1 /var/www/html/projects/public/blog/protected/models/Tag.php(104): CActiveRecord->__call('addTags', Array)
+#2 /var/www/html/projects/public/blog/protected/models/Tag.php(104): Tag->addTags(Array)
+#3 /var/www/html/projects/public/blog/protected/models/Post.php(156): Tag->updateFrequency(NULL, 'prueba tag')
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1100): Post->afterSave()
+#5 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#6 /var/www/html/projects/public/blog/protected/controllers/PostController.php(113): CActiveRecord->save()
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#18 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/create
+---
+2015/06/06 11:06:42 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (112)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 11:06:42 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (112)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 11:06:42 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (112)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 11:06:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.{{tag}}' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `{{tag}}`.
+in /var/www/html/projects/public/blog/protected/models/Tag.php (135)
+in /var/www/html/projects/public/blog/protected/models/Tag.php (127)
+in /var/www/html/projects/public/blog/protected/models/Post.php (156)
+2015/06/06 11:06:42 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{tag}}" for active record class "Tag" cannot be found in the database.' in /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Tag))
+#1 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1789): CActiveRecord->getTableSchema()
+#3 /var/www/html/projects/public/blog/protected/models/Tag.php(135): CActiveRecord->updateCounters(Array, Object(CDbCriteria))
+#4 /var/www/html/projects/public/blog/protected/models/Tag.php(127): Tag->addTags(Array)
+#5 /var/www/html/projects/public/blog/protected/models/Post.php(156): Tag->updateFrequency(NULL, 'prueba tag')
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1100): Post->afterSave()
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#8 /var/www/html/projects/public/blog/protected/controllers/PostController.php(113): CActiveRecord->save()
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#10 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#19 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#20 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#21 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://projects.com/blog/index.php?r=post/create
+---
+2015/06/06 11:08:22 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (112)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 11:08:22 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (112)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 11:08:22 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /var/www/html/projects/public/blog/protected/controllers/PostController.php (112)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 12:48:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(270): CController->missingAction('api')
+#1 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/api/posts')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php/post/api/posts
+HTTP_REFERER=http://projects.com/blog/index.php/post/angular
+---
+2015/06/06 12:49:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(270): CController->missingAction('api')
+#1 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('post/api/posts')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php/post/api/posts
+HTTP_REFERER=http://projects.com/blog/index.php/post/angular
+---
+2015/06/06 13:16:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`tbl_post`, CONSTRAINT `FK_post_author` FOREIGN KEY (`author_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`, `status`, `update_time`, `create_time`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in /var/www/html/projects/public/blog/protected/controllers/ApiController.php (101)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 13:16:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`tbl_post`, CONSTRAINT `FK_post_author` FOREIGN KEY (`author_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`, `status`, `update_time`, `create_time`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in /var/www/html/projects/public/blog/yii-1.1.16/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /var/www/html/projects/public/blog/protected/controllers/ApiController.php(101): CActiveRecord->save()
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): ApiController->actionCreate()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('api/create')
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/api/posts
+HTTP_REFERER=http://projects.com/blog/index.php/post/angular
+---
+2015/06/06 13:17:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`tbl_post`, CONSTRAINT `FK_post_author` FOREIGN KEY (`author_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`, `status`, `update_time`, `create_time`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in /var/www/html/projects/public/blog/protected/controllers/ApiController.php (101)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 13:17:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`tbl_post`, CONSTRAINT `FK_post_author` FOREIGN KEY (`author_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`, `status`, `update_time`, `create_time`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in /var/www/html/projects/public/blog/yii-1.1.16/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /var/www/html/projects/public/blog/protected/controllers/ApiController.php(101): CActiveRecord->save()
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): ApiController->actionCreate()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('api/create')
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/api/posts
+HTTP_REFERER=http://projects.com/blog/index.php/post/angular
+---
+2015/06/06 13:18:34 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`tbl_post`, CONSTRAINT `FK_post_author` FOREIGN KEY (`author_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`, `status`, `update_time`, `create_time`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in /var/www/html/projects/public/blog/protected/controllers/ApiController.php (101)
+in /var/www/html/projects/public/blog/index.php (13)
+2015/06/06 13:18:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`tbl_post`, CONSTRAINT `FK_post_author` FOREIGN KEY (`author_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`, `status`, `update_time`, `create_time`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in /var/www/html/projects/public/blog/yii-1.1.16/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /var/www/html/projects/public/blog/yii-1.1.16/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /var/www/html/projects/public/blog/protected/controllers/ApiController.php(101): CActiveRecord->save()
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/actions/CInlineAction.php(49): ApiController->actionCreate()
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('api/create')
+#9 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/api/posts
+HTTP_REFERER=http://projects.com/blog/index.php/post/angular
+---
+2015/06/06 13:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "posts".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(270): CController->missingAction('posts')
+#1 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('posts')
+#2 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('api/posts')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php/api/posts/
+HTTP_REFERER=http://projects.com/blog/index.php/post/angular
+---
+2015/06/06 13:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "posts".' in /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(270): CController->missingAction('posts')
+#1 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('posts')
+#2 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('api/posts')
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php/api/posts/
+HTTP_REFERER=http://projects.com/blog/index.php/post/angular
+---
+2015/06/06 14:11:46 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._identity" is not defined.' in /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/projects/public/blog/protected/controllers/ApiController.php(269): CComponent->__get('_identity')
+#1 /var/www/html/projects/public/blog/protected/controllers/ApiController.php(25): ApiController->_checkAuth()
+#2 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(306): ApiController->beforeAction(Object(CInlineAction))
+#3 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(282): CController->run('list')
+#6 /var/www/html/projects/public/blog/yii-1.1.16/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#7 /var/www/html/projects/public/blog/yii-1.1.16/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/html/projects/public/blog/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/blog/index.php/api/posts/
+HTTP_REFERER=http://projects.com/blog/index.php/post/angular
+---
